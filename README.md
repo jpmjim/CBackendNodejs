@@ -16,3 +16,10 @@ npm i nodemon eslint eslint-config-prettier eslint-plugin-prettier prettier -D
 Correr proyecto con
 npm run dev "en modo desarrollo"
 npm run start "en modo producción servidor node plano"
+
+3.-Instalación de Express.js y tu primer servidor HTTP
+------------------------------------------------------
+Instalación de express como dependencia de producción diferente a las de desarrollo.
+npm i express
+
+se puede tener console.log en desarrollo pero no en producción 
