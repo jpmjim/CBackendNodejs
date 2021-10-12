@@ -47,3 +47,7 @@ PATCH (como POST) puede tener efectos secundarios sobre otros recursos.
 PATCH - HTTP | MDN
 
 Los endpoints son las URLs de un API o un backend que responden a una petición. Los mismos entrypoints tienen que calzar con un endpoint para existir. Algo debe responder para que se renderice un sitio con sentido para el visitante.
+
+8.-Separación de resposabilidades con express.Router
+----------------------------------------------------
+
