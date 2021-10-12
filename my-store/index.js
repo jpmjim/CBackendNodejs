@@ -5,7 +5,6 @@ const port = 3000;
 
 //captura de la informacion POST "el middleware "
 app.use(express.json());
-
 routerApi(app);
 
 //server express
