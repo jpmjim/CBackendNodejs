@@ -7,7 +7,7 @@ function logErros (err, req, res, next) {
 }
 
 //para crear un formato  para errores stacks
-function errorHandler (err, req, res, next) {
+function errorHandler (err, req, res,) {
   console.log('errorHandler');
   res.status(500).json({
      messange: err.messange,
@@ -15,4 +15,12 @@ function errorHandler (err, req, res, next) {
   });
 }
 
-module.exports = { logErros, errorHandler };
+function boomErrorHandler(err, req, res, next) {
+  if (err.isBoom) {
+    const { output } = err;
+    res.status(output.statusCode).json(output.payload);
+  }
+  next(err);
+}
+
+module.exports = { logErros, errorHandler, boomErrorHandler };
