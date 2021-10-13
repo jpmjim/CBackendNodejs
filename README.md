@@ -48,6 +48,12 @@ PATCH - HTTP | MDN
 
 Los endpoints son las URLs de un API o un backend que responden a una petición. Los mismos entrypoints tienen que calzar con un endpoint para existir. Algo debe responder para que se renderice un sitio con sentido para el visitante.
 
-8.-Separación de resposabilidades con express.Router
-----------------------------------------------------
 
+16.-¿Qué son los Middlewares?
+-----------------------------
+Middleware es software que permite uno o más tipos de comunicación o conectividad entre dos o más aplicaciones o componentes de aplicaciones en una red distribuida. Al facilitar la conexión de aplicaciones que no fueron diseñadas para conectarse entre sí, y al brindar funcionalidad para conectarlas de manera inteligente, el middleware agiliza el desarrollo de aplicaciones y acelera el tiempo de comercialización.
+ - Funcionar como pipes
+ - Validar datos
+ - Capturar errores
+ - Validar permisos
+ - Controlar accesos
