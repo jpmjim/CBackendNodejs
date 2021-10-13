@@ -109,4 +109,7 @@ npm i cors
 ---------------------
 Instalamos pasos en esta dirección
 https://devcenter.heroku.com/articles/heroku-cli#download-and-install
+heroku create
+ver errores en heroku
+heroku logs --tail
 
