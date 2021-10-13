@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const routerApi = require('./routes');
 
 const { logErros, errorHandler, boomErrorHandler } = require('./middlewares/error.handler')
@@ -8,6 +9,19 @@ const port = 3000;
 
 //captura de la informacion POST "el middleware "
 app.use(express.json());
+
+const whitelist = ['http://localhost:5500', 'https://myapp.co'];
+const options = {
+  origin: (origin, callback) => {
+    if (whitelist.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('no permitido'));
+    }
+  }
+};
+app.use(cors(options));//hablitamos a cualquier dominio
+
 
 
 //server express

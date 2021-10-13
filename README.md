@@ -67,3 +67,41 @@ instalación npm i @hapi/boom
 -------
 Validación de datos con la libreria Joi "validacion schemas"
 npm i joi
+
+21.-Middlewares populares en Express.js
+---------------------------------------
+CORS
+Middleware para habilitar CORS (Cross-origin resource sharing) en nuestras rutas o aplicación. http://expressjs.com/en/resources/middleware/cors.html
+
+Morgan
+Un logger de solicitudes HTTP para Node.js. http://expressjs.com/en/resources/middleware/morgan.html
+
+Helmet
+Helmet nos ayuda a proteger nuestras aplicaciones Express configurando varios encabezados HTTP. ¡No es a prueba de balas de plata, pero puede ayudar! https://github.com/helmetjs/helmet
+
+Express Debug
+Nos permite hacer debugging de nuestras aplicaciones en Express mediante el uso de un toolbar en la pagina cuando las estamos desarrollando. https://github.com/devoidfury/express-debug
+
+Express Slash
+Este middleware nos permite evitar preocuparnos por escribir las rutas con o sin slash al final de ellas. https://github.com/ericf/express-slash
+
+Passport
+Passport es un middleware que nos permite establecer diferentes estrategias de autenticación a nuestras aplicaciones. https://github.com/jaredhanson/passport
+
+Puedes encontrar más middlewares populares en el siguiente enlace: http://expressjs.com/en/resources/middleware.html
+
+22.-Consideraciones para producción
+Lista de consideraciones antes de llevar a producción
+ - Cors niveles de accesos
+ - Https servidor seguro
+ - Procesos de Build proceso de información correcto
+ - Remover logs captura logs pueden causar delays
+ - Seguridad (Helmet) seguridad desde la primera vista, helmet colección middlerwars que coloca capas de seguridad en node
+ - Testing pruebas unitarias, pruebas de integración
+
+23.-Problema de CORS (conexión)
+-------------------------------
+Solucion de probblema CORS
+instalamos libreria de cors
+npm i cors
+
