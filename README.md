@@ -59,5 +59,11 @@ Middleware es software que permite uno o más tipos de comunicación o conectivi
  - Controlar accesos
 
 18.-Boom
+--------
 Manejo de errores con la libreria Boom "Status Code"
 instalación npm i @hapi/boom
+
+19.-Joi
+-------
+Validación de datos con la libreria Joi "validacion schemas"
+npm i joi
