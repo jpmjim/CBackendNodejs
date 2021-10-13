@@ -105,3 +105,8 @@ Solucion de probblema CORS
 instalamos libreria de cors
 npm i cors
 
+24.-Heroku Deployment
+---------------------
+Instalamos pasos en esta dirección
+https://devcenter.heroku.com/articles/heroku-cli#download-and-install
+
